@@ -1,0 +1,16 @@
+{
+  "name": "authenticator-pro",
+  "version": "1.0.0",
+  "description": "A powerful multi-factor authenticator app similar to Google Authenticator",
+  "scripts": {
+    "backend-install": "cd apps/backend && npm install && npm install express cors dotenv speakeasy qrcode typescript @types/node ts-node",
+    "frontend-install": "cd apps/frontend && npm install",
+    "backend-start": "cd apps/backend && npm start",
+    "frontend-start": "cd apps/frontend && npm start",
+    "install-all": "npm install && npm run backend-install && npm run frontend-install",
+    "start-all": "concurrently \"npm run backend-start\" \"npm run frontend-start\""
+  },
+  "keywords": ["authenticator", "2fa", "totp", "hotp", "security", "mfa"],
+  "author": "realarpan",
+  "license": "MIT"
+}
