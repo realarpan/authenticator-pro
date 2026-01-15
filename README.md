@@ -101,3 +101,26 @@ Update account details
 
 **DELETE** `/api/accounts/:id`
 Remove an authenticator account
+
+
+## Security
+
+- Passwords are hashed with bcrypt
+- JWT tokens expire after 24 hours
+- All sensitive data is encrypted
+- HTTPS recommended for production
+- Regular security audits recommended
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+MIT License - see LICENSE file for details
