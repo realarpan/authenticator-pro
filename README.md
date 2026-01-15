@@ -45,3 +45,31 @@ A powerful multi-factor authenticator app similar to Google Authenticator. Gener
 3. **Verify Code**: Enter the code shown in your authenticator app
 4. **Backup**: Save your backup codes in a secure location
 5. **Manage**: Edit or delete accounts as needed
+
+
+## Technology Stack
+
+### Frontend
+- **React 18**: Modern UI framework with hooks
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vite**: Lightning-fast build tool
+- **PWA**: Progressive Web App capabilities
+
+### Backend
+- **Node.js**: JavaScript runtime
+- **Express**: Web application framework
+- **MongoDB**: NoSQL database
+- **JWT**: Secure authentication tokens
+- **CORS**: Cross-origin resource sharing
+
+## Configuration
+
+Create a `.env` file in the root directory:
+
+```env
+NODE_ENV=development
+PORT=3001
+DB_URI=mongodb://localhost:27017/authenticator
+JWT_SECRET=your_secret_key_here
+```
