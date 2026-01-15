@@ -73,3 +73,31 @@ PORT=3001
 DB_URI=mongodb://localhost:27017/authenticator
 JWT_SECRET=your_secret_key_here
 ```
+
+
+## API Documentation
+
+### Authentication Endpoints
+
+**POST** `/api/auth/register`
+Register a new user account
+
+**POST** `/api/auth/login`
+Authenticate and receive JWT token
+
+**POST** `/api/auth/refresh`
+Refresh authentication token
+
+### Account Management
+
+**GET** `/api/accounts`
+Fetch all user accounts
+
+**POST** `/api/accounts`
+Create a new authenticator account
+
+**PUT** `/api/accounts/:id`
+Update account details
+
+**DELETE** `/api/accounts/:id`
+Remove an authenticator account
